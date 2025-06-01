@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    Animation animation;
+    Animation dooranimation;
     // Use this for initialization
     void Start()
     {
-        animation = GetComponent<Animation>();
+        dooranimation = GetComponent<Animation>();
     }
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("f"))
-            animation.Play();
+            dooranimation.Play();
     }
 }
